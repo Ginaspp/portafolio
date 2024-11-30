@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans&display=swap');
+body{
+    font-family:  "Parkinsans", sans-serif !important;
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    
+}
+
+header, section, footer{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#cabecera{
+    height: 400px;
+    width: auto;
+    position: relative;
+ 
+}
+#entrada{
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 0; right: 30%; bottom: 0; margin: auto; left: 0;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
+#entrada h1{
+    font-size: 50px;
+    top: 0; bottom: 0%;
+    margin-left: 10%;
+    
+}
+h1 span{
+color: #F96E2A;
+ font-weight: bold;
+ font-size: 60px;
+}
+h2{
+    margin-left: 10%;
+    font-size: 50px;
+    margin-top: 0%;
+}
+h2 span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F96E2A;
+    font-size: 60px; 
+    
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10ch;
+    display:block;
+    animation: typing 2s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    
+}
+@keyframes typing {
+    from { width: 0;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+.aboutme p{
+    font-weight: bold;
+}
+.aboutme h3{
+    color: #F96E2A;
+    font-weight: bold;
+}
+
+#botonera{
+    width: 100%;
+    height:auto ;
+    float: right;
+    position: fixed;
+    background-color: #FBF8EF;
+    opacity: 0.9;
+    box-shadow: 0 0 40px #78B3CE;
+    border-radius: 5px;
+    z-index: 1;
+    
+}
+.menu{
+    display: none;
+}
+
+.botones {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.botones li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#78B3CE;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 20px;
+    border: 2px #78B3CE solid;
+    text-transform: uppercase;
+} 
+.botones li a:hover{
+    background-color:#F96E2A ;
+    color: #FBF8EF;
+    border: 1px #e9fbff solid;
+    box-shadow: 0 0 10px #F96E2A, 0 0 40px #F96E2A, 0 0 80px #F96E2A;
+   transition-delay: 0.2s;
+}
+#links{
+    width: 400px;
+    height: 30%;
+    position:absolute;
+    top: 200px; right: 0; bottom: 0; margin: auto; left: 50%;
+    padding: 5px;
+    background-size: cover;
+}
+#email{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color:#F96E2A;
+    font-weight: bold;
+}
+#email:hover{
+    color: #78B3CE;
+    font-size: larger;
+    
+}
+.btn_links{
+    margin: 10px;
+    padding: 0;
+    width: 40%;
+    height: 40%;
+    
+    list-style: none;
+    display: flex;
+}
+.btn_links ul li{
+    display: inline;
+    
+}
+.btn_links li a {
+    display: block;
+    margin-left: 30%;
+    
+}
+.max{
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+#sobremi{
+    height:350px;
+    margin-top: 150px;
+}
+.aboutme{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px;
+}
+#educacion{
+    height:500px;
+ 
+} 
+.educacion_cont{
+ 
+    width: 20%;
+    height: 80%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10px;
+ }
+ .educacion_cont h3{
+    color: #F96E2A;
+    font-weight: bold;
+ }
+ .educacion_cont p {
+    color: #78B3CE;
+    font-weight: bold;
+ }
+ 
+#proyectos{
+    height: 600px;
+    
+}
+.proyectos_cont{
+    width: auto;
+    height:auto;
+    float: left;
+    margin-top: 10%;
+    margin-left: 8%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: static;
+}
+.card-body{
+    background-color: #e9fbff ;
+    
+}
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    color: #F96E2A;
+    font-weight: bold;
+}
+#contacto{
+    height: 200px;
+    position: relative;
+}
+#contactame{
+    width: 30%;
+    height: 30%;
+    position:absolute;
+    top: 0; right: 0; bottom: 0; margin: auto; left: 10%;
+    padding: 10px;
+    background-size: cover;
+
+}
+.ocultar{
+    display: none
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+    header, section, footer{
+        width: 600px;  
+    }
+    #cabecera{
+       display: block;
+        width: 100%;
+        position: static;
+       
+    }
+    #entrada{
+        width: 100%;
+        height: auto;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        position: static;
+    }
+    #botonera{
+        top: 0;
+    }
+    #links{
+        align-items: center;
+        top: 50px; 
+        position: static;
+    }
+    #sobremi{
+        height:auto;
+    }
+    .aboutme{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    #proyectos{
+        height: auto;
+       align-items: center;
+      
+    }
+    .proyectos_cont{
+        float: none;
+       
+    }
+    #educacion{
+        height:auto;
+        display: grid;  
+        grid-template-columns: repeat(2, 300px);   
+        grid-template-rows: repeat(2, 300px); 
+       gap: 10px; 
+      
+    } 
+    .educacion_cont{
+        margin-left: 5px;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+     
+     #contactame{
+        width: 60%;
+        top: 0; right: 0; bottom: 0; margin: auto; left: 0;
+       
+    }  
+    .btn_links  {
+       align-items: center;
+    } 
+}
+
+@media all and (max-width: 599px) {
+    header, section, footer{
+        width: 100%;
+        height: auto;
+    }
+    #cabecera{
+        display: block;
+        width: 100%;
+        position: static;
+     }
+    
+     #entrada{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        position: static;
+        
+     }
+     #botonera{
+      width: 50%;
+        height: 100%;
+        background-color: #e9fbff;
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); 
+
+       
+     }  
+     .botones li a{
+        padding: 5px;
+        margin: 20px; 
+        box-sizing: border-box;
+    }
+    .botones{
+        flex-direction: column;
+       
+    }
+    .botonera{
+       visibility: hidden;
+        opacity: 0;    
+    }
+    .botonera.visible{
+     visibility: visible;
+     opacity: 1;
+
+    }
+    .menu{
+        display: block;
+        font-size: 40px;
+        background-color: #e9fbff;
+        border-style: none;
+     }
+
+    .menu:hover{
+        background-color: #F96E2A;
+        color: #FBF8EF;
+        border-radius: 6px;
+        border-style: none;
+     }
+
+     #links{
+     float: left;    
+     position: static; 
+     margin-left: 10%;
+     }
+     #sobremi{
+        height:auto;
+       position: static;
+       margin-top: 300px;
+     }
+     .aboutme{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+     }
+     #proyectos{
+        height: auto;
+        align-items: center;
+        margin-top: 200px;
+     }
+     .proyectos_cont{
+         float: none;
+     }
+     #educacion{
+         height:auto;
+         margin-top: 200px;
+     } 
+     .educacion_cont{
+         margin-left: 5px;
+         width: 100%;
+         height: auto;
+         float: none;
+     }
+      
+      #contactame{
+         width: 100%;
+         top: 0; right: 0; bottom: 0; margin: auto; left: 0;
+        
+     }  
+     .btn_links  {
+        align-items: center;
+     } 
+}
